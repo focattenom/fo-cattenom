@@ -69,3 +69,96 @@
     </div>
 
 </section>
+.summary {
+    border-left: none;
+}
+
+.summary-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.summary-badge {
+    display: inline-block;
+    background: linear-gradient(135deg,#00B050,#007A3D);
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.summary-header h2 {
+    margin:15px 0 10px;
+    color:#002060;
+    font-size:32px;
+}
+
+.summary-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:18px;
+}
+
+.summary-item {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    background:white;
+    border-radius:14px;
+    padding:20px;
+    color:#002060;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:all .25s ease;
+    border-top:5px solid #00B050;
+}
+
+.summary-item:hover {
+    transform:translateY(-5px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.summary-icon {
+    font-size:34px;
+    margin-right:18px;
+}
+
+.summary-content {
+    flex:1;
+}
+
+.summary-content h3 {
+    margin:0;
+    color:#002060;
+    font-size:18px;
+}
+
+.summary-content p {
+    margin:5px 0 0;
+    font-size:14px;
+    color:#666;
+}
+
+.summary-arrow {
+    font-size:22px;
+    color:#00B050;
+    font-weight:bold;
+}
+
+.summary-item.danger {
+    border-top:5px solid #C00000;
+}
+
+.summary-item.warning {
+    border-top:5px solid #F39C12;
+}
+
+.summary-item.info {
+    border-top:5px solid #0070C0;
+}
+
+.summary-item.success {
+    border-top:5px solid #00B050;
+}
