@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FO Énergie EDF SA — Compte-rendu CSEC EDF SA des 17 et 18 juin 2026</title>
+  <meta name="description" content="Compte-rendu FO Énergie EDF SA du CSE Central EDF SA des 17 et 18 juin 2026, avec pièces jointes cliquables." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#07315f;--blue:#006fb8;--cyan:#00a6d6;--green:#28b7a9;--red:#ef3340;
+      --orange:#f58200;--ink:#12304f;--muted:#516b82;--soft:#f2f8fb;--line:#d8edf5;--white:#fff;
+      --shadow:0 18px 50px rgba(7,49,95,.12);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Montserrat,Arial,sans-serif;background:linear-gradient(180deg,#f6fbfd 0%,#fff 48%,#eefaf8 100%);color:var(--ink);line-height:1.55}
+    .wrap{width:min(1160px,calc(100% - 34px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);box-shadow:0 8px 26px rgba(7,49,95,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit}
+    .brand img.fo{height:72px;width:auto;object-fit:contain}
+    .brand img.csec{height:54px;width:auto;object-fit:contain;border-radius:10px}
+    .brand-title b{display:block;font-weight:950;color:var(--navy);font-size:1.1rem;line-height:1.1}.brand-title span{font-weight:850;color:var(--green);font-size:.85rem}
+    .menu{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.menu a{text-decoration:none;color:var(--navy);font-weight:900;font-size:.9rem;padding:10px 13px;border-radius:999px}.menu a:hover{background:#e9f8f6;color:#08776b}
+    .hero{padding:48px 0 28px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;right:-110px;top:-100px;width:420px;height:420px;border-radius:50%;background:linear-gradient(135deg,rgba(0,166,214,.14),rgba(40,183,169,.14));z-index:-1}.hero:after{content:"";position:absolute;left:-130px;bottom:-150px;width:380px;height:380px;border-radius:50%;background:rgba(239,51,64,.08);z-index:-1}
+    .hero-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;right:0;top:0;border-style:solid;border-width:0 190px 96px 0;border-color:transparent var(--cyan) transparent transparent;opacity:.9}.hero-card:after{content:"";position:absolute;right:0;top:68px;border-style:solid;border-width:0 115px 58px 0;border-color:transparent var(--green) transparent transparent;opacity:.96}
+    .hero-logos{display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative;z-index:1}.hero-logos img.csec{height:86px;max-width:34%;object-fit:contain}.hero-logos img.fo{height:130px;max-width:26%;object-fit:contain}
+    .title{text-align:center;position:relative;z-index:1}.kicker{display:inline-flex;padding:8px 14px;border-radius:999px;background:#e9f8f6;color:#08776b;font-weight:950;text-transform:uppercase;letter-spacing:.07em;font-size:.76rem}.title h1{font-family:'Bebas Neue',Montserrat,sans-serif;font-size:clamp(3.2rem,7vw,6.4rem);line-height:.88;margin:16px 0 8px;color:var(--navy);letter-spacing:.02em}.title h1 span{color:var(--red)}.subtitle{display:inline-flex;background:var(--navy);color:#fff;padding:10px 22px;border-radius:8px;font-weight:950;text-transform:uppercase;letter-spacing:.05em;box-shadow:0 10px 20px rgba(7,49,95,.18)}
+    .intro{margin-top:24px;display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}.intro-box{background:linear-gradient(135deg,#fff,#f4fbfd);border:1px solid var(--line);border-radius:22px;padding:22px}.intro-box p{margin:0;font-weight:700;color:#243b54}.intro-box strong{color:var(--red)}
+    .docbox{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:22px;padding:22px}.docbox h2{margin:0 0 12px;font-size:1.05rem;text-transform:uppercase}.docbox a{display:flex;gap:9px;align-items:flex-start;color:#fff;text-decoration:none;font-weight:800;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.18)}.docbox a:hover{text-decoration:underline}.docbox span{opacity:.9}
+    section{padding:28px 0}.section-title{font-family:'Bebas Neue';font-size:clamp(2.4rem,5vw,4rem);line-height:.95;margin:0 0 18px;color:var(--navy);letter-spacing:.02em}.lead{font-size:1.04rem;font-weight:750;color:#27465f;margin:0 0 18px;max-width:930px}
+    .agenda{display:grid;gap:16px}.case{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 12px 34px rgba(7,49,95,.08);overflow:hidden;display:grid;grid-template-columns:76px 1fr 285px}.num{display:grid;place-items:start center;padding-top:20px;color:#fff;font-family:'Bebas Neue';font-size:3.2rem}.num.red{background:var(--red)}.num.orange{background:var(--orange)}.num.blue{background:var(--blue)}.case-main{padding:22px 24px}.case h3{margin:0 0 10px;font-size:1.2rem;color:var(--navy)}.case h3.red{color:var(--red)}.case h3.orange{color:var(--orange)}.case h3.blue{color:var(--blue)}.case p{margin:0 0 12px;font-weight:650;color:#33485d}.case strong{color:var(--navy)}.side{border-left:1px solid var(--line);padding:22px;display:flex;align-items:center}.vote{width:100%;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 10px 28px rgba(7,49,95,.08)}.vote-title{padding:9px 12px;text-align:center;color:#fff;font-weight:950;text-transform:uppercase}.vote-title.red{background:var(--red)}.vote-title.blue{background:var(--blue)}.vote-title.orange{background:var(--orange)}.vote ul{list-style:none;padding:14px;margin:0}.vote li{font-weight:900;margin:7px 0}.ok{color:#009b63}.ko{color:var(--red)}.warn{color:var(--orange)}.badge{display:block;margin:10px 14px 14px;padding:10px;border-radius:9px;text-align:center;color:#fff;font-weight:950}.badge.red{background:var(--red)}.badge.blue{background:var(--blue)}
+    .links{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.pill{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border-radius:999px;padding:10px 13px;background:#eef8fb;color:var(--navy);border:1px solid var(--line);font-weight:900;font-size:.88rem}.pill:hover{background:#e3f6f2;color:#08776b}.pill.red{background:#fff2f3;color:#b61e2b}.pill.blue{background:#eef6ff;color:#005a9e}.pill.orange{background:#fff6e8;color:#aa5600}
+    .thanks{display:flex;gap:18px;align-items:center;background:linear-gradient(90deg,#e7faf7,#fff);border:1px solid var(--line);border-radius:20px;padding:18px 20px;box-shadow:0 12px 30px rgba(7,49,95,.06)}.thanks .icon{font-size:2rem}.thanks p{margin:0;font-weight:800}.thanks strong{color:#08776b}
+    .timeline{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:22px}.event{background:#fff;border:1px solid var(--line);border-top:5px solid var(--blue);border-radius:16px;padding:15px;min-height:160px;box-shadow:0 10px 26px rgba(7,49,95,.07)}.event.green{border-top-color:var(--green)}.event.red{border-top-color:var(--red)}.event.orange{border-top-color:var(--orange)}.event h3{margin:0 0 8px;font-size:.95rem;color:var(--navy)}.event p{margin:5px 0;font-size:.86rem;font-weight:650;color:#33485d}.tag{display:inline-flex;margin-top:8px;border-radius:999px;padding:5px 8px;font-size:.7rem;font-weight:950;background:#eef8fb;color:var(--blue)}.tag.red{background:#fff0f1;color:var(--red)}.tag.green{background:#e7faf7;color:#08776b}
+    .all-docs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.doc-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:0 8px 25px rgba(7,49,95,.06);text-decoration:none;color:inherit;display:flex;gap:12px;align-items:flex-start}.doc-card:hover{transform:translateY(-1px);box-shadow:var(--shadow)}.doc-card .ico{font-size:1.6rem}.doc-card b{display:block;color:var(--navy);margin-bottom:4px}.doc-card span{font-size:.87rem;color:var(--muted);font-weight:700}
+    footer{margin-top:28px;background:linear-gradient(135deg,var(--navy),var(--blue) 45%,var(--green));color:#fff;padding:28px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.foot img{background:#fff;border-radius:14px;padding:7px;object-fit:contain}.foot .fo{height:84px}.foot .csec{height:64px}.slogan{font-family:'Bebas Neue';font-size:2.2rem;letter-spacing:.04em}.contact{font-weight:850}.contact a{color:#fff;text-decoration:none}.contact a:hover{text-decoration:underline}
+    @media(max-width:980px){.intro,.case{grid-template-columns:1fr}.num{display:none}.side{border-left:0;border-top:1px solid var(--line)}.timeline,.all-docs{grid-template-columns:1fr 1fr}.hero-logos{align-items:flex-start}.hero-logos img.csec{height:62px}.hero-logos img.fo{height:92px}.menu{display:none}}
+    @media(max-width:620px){.wrap{width:min(100% - 24px,1160px)}.hero-card{padding:20px}.hero-logos{gap:8px}.hero-logos img.csec{height:46px;max-width:38%}.hero-logos img.fo{height:72px;max-width:30%}.title h1{font-size:3.3rem}.subtitle{font-size:.85rem}.timeline,.all-docs{grid-template-columns:1fr}.brand img.fo{height:58px}.brand img.csec{height:42px}.brand-title{display:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Retour en haut de page">
+        <img class="csec" src="csec-edf-sa.jfif" alt="CSEC EDF SA">
+        <img class="fo" src="fo-energie-edf-sa.png" alt="FO Énergie EDF SA">
+        <span class="brand-title"><b>Compte-rendu CSEC</b><span>Agir, ne pas subir !</span></span>
+      </a>
+      <nav class="menu">
+        <a href="#ordre">Ordre du jour</a>
+        <a href="#documents">Pièces jointes</a>
+        <a href="#prochains">Prochains CSEC</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-card">
+        <div class="hero-logos">
+          <img class="csec" src="csec-edf-sa.jfif" alt="Logo CSEC EDF SA">
+          <div class="title">
+            <span class="kicker">Présentation pour diffusion aux salariés</span>
+            <h1>Compte-rendu<br><span>CSEC EDF SA</span></h1>
+            <div class="subtitle">Séances des 17 & 18 juin 2026</div>
+          </div>
+          <img class="fo" src="fo-energie-edf-sa.png" alt="Logo FO Énergie EDF SA">
+        </div>
+        <div class="intro">
+          <div class="intro-box">
+            <p>
+              Cette page reprend les principaux points du CSE Central EDF SA des 17 et 18 juin 2026 et met à disposition
+              les déclarations, avis et résolutions associés. Elle est destinée à faciliter l'information et la diffusion auprès des salariés.
+            </p>
+            <p style="margin-top:12px"><strong>FO Énergie EDF SA</strong> rappelle que la reconnaissance des salariés doit accompagner les projets industriels et les transformations de l'entreprise.</p>
+          </div>
+          <div class="docbox">
+            <h2>Accès rapide aux pièces jointes</h2>
+            <a href="cr-fo-csec-17-18-juin-2026.pdf" target="_blank"><span>📄</span>Compte-rendu FO CSEC 17 & 18 juin 2026</a>
+            <a href="declaration-liminaire-fo-csec-18-06-2026.pdf" target="_blank"><span>📄</span>Déclaration liminaire FO — Reconnaissez les salariés</a>
+            <a href="declaration-fo-cordemais.pdf" target="_blank"><span>📄</span>Déclaration FO — Cordemais</a>
+            <a href="avis-negatif-majoritaire-cordemais.pdf" target="_blank"><span>📄</span>Avis négatif majoritaire — Cordemais</a>
+            <a href="declaration-fo-politique-sociale.pdf" target="_blank"><span>📄</span>Déclaration FO — Politique sociale</a>
+            <a href="resolution-bilan-social-politique-sociale.pdf" target="_blank"><span>📄</span>Résolution — Bilan social et politique sociale</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ordre">
+      <div class="wrap">
+        <h2 class="section-title">Les points à retenir</h2>
+        <p class="lead">Trois sujets majeurs étaient inscrits à l'ordre du jour : Cordemais, l'Opérateur Patrimonial Foncier et la politique sociale de l'Entreprise.</p>
+        <div class="agenda">
+          <article class="case">
+            <div class="num red">1</div>
+            <div class="case-main">
+              <h3 class="red">Projet d'arrêt définitif anticipé de la production d'électricité de la tranche 4 de Cordemais, pour avis</h3>
+              <p>FO s'interroge sur les raisons d'une telle précipitation à l'encontre du site, des emplois et des salariés de Cordemais.</p>
+              <p>FO considère que les dimensions sociales, humaines et techniques ne sont pas traitées à la hauteur des enjeux et demande le maintien de la tranche 4 en <strong>Arrêt Garanti Prolongé jusqu'au 31 mars 2027</strong>.</p>
+              <div class="links">
+                <a class="pill red" href="declaration-fo-cordemais.pdf" target="_blank">📄 Déclaration FO Cordemais</a>
+                <a class="pill red" href="avis-negatif-majoritaire-cordemais.pdf" target="_blank">✅ Avis négatif majoritaire</a>
+              </div>
+            </div>
+            <aside class="side">
+              <div class="vote">
+                <div class="vote-title red">Vote</div>
+                <ul>
+                  <li class="ok">Favorable : 2</li>
+                  <li class="ko">Non favorable : 12</li>
+                  <li class="warn">Abstention : 11</li>
+                </ul>
+                <span class="badge red">Avis négatif majoritaire</span>
+              </div>
+            </aside>
+          </article>
+
+          <article class="case">
+            <div class="num orange">2</div>
+            <div class="case-main">
+              <h3 class="orange">Création d'une unité “Opérateur Patrimonial Foncier” et évolution de la maîtrise d'ouvrage de production au sein de la DTEAM, pour information</h3>
+              <p>Les salariés et FO partagent l'intérêt d'une organisation permettant de gagner en efficacité.</p>
+              <p>Pour autant, le projet reste trop imprécis sur le volet social : futurs accords collectifs, durée des effectifs constants, absence de déménagement, accompagnement dans le temps.</p>
+              <p><strong>FO ne signera pas un chèque en blanc</strong> et attend que la Direction complète sa copie avant le passage pour avis en CSEC.</p>
+            </div>
+            <aside class="side">
+              <div class="vote">
+                <div class="vote-title orange">Points de vigilance</div>
+                <ul>
+                  <li class="warn">Volet social imprécis</li>
+                  <li>Effectifs constants : jusqu'à quand ?</li>
+                  <li>Pas de déménagement : jusqu'à quand ?</li>
+                  <li class="warn">58 % d'avis neutres des salariés</li>
+                </ul>
+              </div>
+            </aside>
+          </article>
+
+          <article class="case">
+            <div class="num blue">3</div>
+            <div class="case-main">
+              <h3 class="blue">Politique sociale de l'Entreprise, conditions de travail, emploi et bilan social 2025, pour avis</h3>
+              <p>Face au manque de transparence de la Direction et aux informations transmises jugées incomplètes, incohérentes et insuffisantes, les élus du CSE Central ont refusé de rendre un avis.</p>
+              <p>Une résolution a été adoptée à l'unanimité, notamment sur les difficultés liées à la fiabilité du bilan social, à la rémunération des cadres dirigeants et au recours à la prestation externe.</p>
+              <div class="links">
+                <a class="pill blue" href="declaration-fo-politique-sociale.pdf" target="_blank">📄 Déclaration FO Politique sociale</a>
+                <a class="pill blue" href="resolution-bilan-social-politique-sociale.pdf" target="_blank">📄 Résolution adoptée à l'unanimité</a>
+              </div>
+            </div>
+            <aside class="side">
+              <div class="vote">
+                <div class="vote-title blue">Vote résolution</div>
+                <ul>
+                  <li class="ok">Pour : 25</li>
+                  <li class="ko">Contre : 0</li>
+                  <li class="warn">Abstention : 0</li>
+                </ul>
+                <span class="badge blue">Résolution adoptée à l'unanimité</span>
+              </div>
+            </aside>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap thanks">
+        <div class="icon">🤝</div>
+        <p><strong>Merci à Christophe JUINO</strong> pour sa participation comme expert sur les dossiers Cordemais et création d'une unité “Opérateur Patrimonial Foncier”.</p>
+      </div>
+    </section>
+
+    <section id="documents">
+      <div class="wrap">
+        <h2 class="section-title">Pièces jointes cliquables</h2>
+        <div class="all-docs">
+          <a class="doc-card" href="cr-fo-csec-17-18-juin-2026.pdf" target="_blank"><span class="ico">📘</span><span><b>Compte-rendu FO CSEC</b><span>CR des séances des 17 & 18 juin 2026</span></span></a>
+          <a class="doc-card" href="declaration-liminaire-fo-csec-18-06-2026.pdf" target="_blank"><span class="ico">🎵</span><span><b>Déclaration liminaire FO</b><span>Reconnaissez les salariés</span></span></a>
+          <a class="doc-card" href="declaration-fo-cordemais.pdf" target="_blank"><span class="ico">⚡</span><span><b>Déclaration FO Cordemais</b><span>Arrêt anticipé tranche 4</span></span></a>
+          <a class="doc-card" href="avis-negatif-majoritaire-cordemais.pdf" target="_blank"><span class="ico">✅</span><span><b>Avis négatif majoritaire</b><span>Vote Cordemais</span></span></a>
+          <a class="doc-card" href="declaration-fo-politique-sociale.pdf" target="_blank"><span class="ico">👥</span><span><b>Déclaration FO Politique sociale</b><span>Santé, conditions de travail, rémunération</span></span></a>
+          <a class="doc-card" href="resolution-bilan-social-politique-sociale.pdf" target="_blank"><span class="ico">📄</span><span><b>Résolution CSEC</b><span>Bilan social 2025 et politique sociale</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="prochains">
+      <div class="wrap">
+        <h2 class="section-title">Prochains CSEC</h2>
+        <div class="timeline">
+          <div class="event green"><h3>📅 2 juillet</h3><p>Échanges avec le PDG</p><p>Point d'avancement projet EPR2</p><p>Projet de demande d'agrément du SPSTIE DTEAM MC DPNT DOAAT</p><span class="tag green">Info</span></div>
+          <div class="event"><h3>📅 24 septembre</h3><p>Réorganisation de la filière comptable</p><p>Création d'une entité déconstruction DTEAM</p><p>Point annuel IAG</p><span class="tag">Avis / Info</span></div>
+          <div class="event green"><h3>📅 6 octobre</h3><p>Séance extraordinaire à confirmer</p><p>Décision finale d'investissement programme EPR2</p><p>Extension du programme EPR2 à 8 tranches</p><span class="tag green">Info / Info consult</span></div>
+          <div class="event"><h3>📅 22 octobre</h3><p>Passage de l'hiver 26/27</p><p>Note d'analyse cabinet IED</p><p>Point d'avancement programme S4PHIR</p><span class="tag">Info</span></div>
+          <div class="event green"><h3>📅 17 novembre</h3><p>Séance extraordinaire à confirmer</p><p>Décision finale d'investissement EPR2</p><p>Extension du programme EPR2 à 8 tranches</p><span class="tag green">Avis / Info</span></div>
+          <div class="event red"><h3>📅 26 novembre</h3><p>Projet de réorganisation de la filière comptable</p><span class="tag red">Avis</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <img class="csec" src="csec-edf-sa.jfif" alt="CSEC EDF SA">
+      <div class="slogan">Agir, ne pas subir !</div>
+      <img class="fo" src="fo-energie-edf-sa.png" alt="FO Énergie EDF SA">
+      <div class="contact"><a href="mailto:fo-cattenom@edf.fr">fo-cattenom@edf.fr</a></div>
+    </div>
+  </footer>
+</body>
+</html>
