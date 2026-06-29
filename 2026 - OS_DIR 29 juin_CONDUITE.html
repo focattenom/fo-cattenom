@@ -71,6 +71,8 @@
     padding: 52px 40px 44px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   .hero::before {
     content: '';
@@ -88,7 +90,7 @@
     border-radius: 50%;
     background: rgba(27,158,208,0.07);
   }
-  .hero-inner { max-width: 800px; position: relative; z-index: 1; }
+  .hero-inner { max-width: 800px; width: 100%; position: relative; z-index: 1; text-align: center; }
   .hero-eyebrow {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
@@ -112,10 +114,12 @@
     opacity: 0.85;
     max-width: 620px;
     line-height: 1.75;
+    margin: 0 auto;
   }
   .hero-actions {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 14px;
     flex-wrap: wrap;
     margin-top: 22px;
@@ -565,19 +569,79 @@
   .ag-text strong { font-size: 1rem; }
   .ag-text span { opacity: 0.9; }
 
-  @media (max-width: 640px) {
-    .ag-banner { padding: 12px 16px; }
-    .ag-text { flex-direction: column; gap: 2px; }
+  /* ── RESPONSIVE ── */
+
+  @media (max-width: 1024px) {
+    main { max-width: 100%; padding: 28px 20px 60px; }
+    .roulements-grid { gap: 16px; }
   }
 
-  @media (max-width: 640px) {
-    header { padding: 14px 16px; flex-wrap: wrap; }
-    .hero { padding: 32px 20px 28px; }
-    .hero h2 { font-size: 1.7rem; }
-    main { padding: 20px 14px 60px; }
-    .roulements-grid { grid-template-columns: 1fr; }
+  @media (max-width: 768px) {
+    header { padding: 14px 20px; gap: 14px; }
+    header img { height: 70px; }
+    .header-text h1 { font-size: 1.15rem; }
     .header-date { display: none; }
-    .contact-box { flex-direction: column; align-items: flex-start; }
+    .hero { padding: 36px 24px 32px; }
+    .hero h2 { font-size: 1.9rem; }
+    .hero p { font-size: 0.98rem; }
+    .ag-banner { padding: 12px 20px; }
+    .ag-text { flex-direction: column; gap: 2px; }
+    main { padding: 24px 16px 60px; }
+    .roulements-grid { grid-template-columns: 1fr; gap: 14px; }
+    .section-label { margin-top: 36px; }
+    .section-label h3 { font-size: 1.1rem; }
+    .timeline { padding-left: 24px; }
+    .timeline-item { padding: 14px 16px; }
+    .timeline-item::before { left: -20px; }
+    .contact-box { flex-direction: column; align-items: flex-start; gap: 14px; }
+    .status-bar { font-size: 0.83rem; padding: 12px 16px; }
+    .fo-alert { padding: 18px 18px 16px; }
+    .fo-alert-header h3 { font-size: 1.05rem; }
+  }
+
+  @media (max-width: 480px) {
+    header { padding: 10px 14px; gap: 10px; flex-wrap: wrap; }
+    header img { height: 54px; }
+    .header-text h1 { font-size: 1rem; }
+    .hero { padding: 28px 16px 24px; }
+    .hero-eyebrow { font-size: 0.7rem; }
+    .hero h2 { font-size: 1.5rem; }
+    .hero p { font-size: 0.93rem; }
+    .hero-tag { font-size: 0.78rem; padding: 6px 14px; }
+    .ag-banner { padding: 10px 14px; }
+    .ag-text strong { font-size: 0.9rem; }
+    .ag-text span { font-size: 0.82rem; }
+    main { padding: 16px 12px 50px; }
+    .section-label { margin-top: 28px; margin-bottom: 16px; }
+    .section-label::before { height: 20px; }
+    .section-label h3 { font-size: 1rem; }
+    .timeline { padding-left: 18px; }
+    .timeline-item { padding: 12px 14px; margin-bottom: 16px; }
+    .timeline-item::before { left: -15px; width: 10px; height: 10px; }
+    .timeline-date { font-size: 0.7rem; }
+    .timeline-title { font-size: 0.97rem; }
+    .timeline-body { font-size: 0.86rem; }
+    .roulement-body .planning-name { font-size: 1.3rem; }
+    .roulement-detail { font-size: 0.84rem; }
+    .roulement-tag { font-size: 0.72rem; }
+    .acte-item { padding: 12px 14px; gap: 10px; }
+    .acte-icon { width: 30px; height: 30px; font-size: 1rem; }
+    .acte-text h4 { font-size: 0.88rem; }
+    .badge-acte { display: block; margin-left: 0; margin-top: 4px; }
+    .fo-alert { padding: 14px 14px 12px; }
+    .fo-alert p { font-size: 0.88rem; }
+    .status-bar { padding: 10px 14px; font-size: 0.8rem; gap: 10px; }
+    .contact-box { padding: 16px 16px; }
+    .contact-icon { width: 40px; height: 40px; font-size: 1.2rem; }
+    .contact-text a { font-size: 0.95rem; }
+    footer { padding: 16px 14px; font-size: 0.75rem; }
+  }
+
+  @media (max-width: 360px) {
+    .hero h2 { font-size: 1.3rem; }
+    .section-label h3 { font-size: 0.93rem; }
+    .timeline-title { font-size: 0.92rem; }
+    .roulements-grid { gap: 10px; }
   }
 </style>
   <!-- GoatCounter analytics -->
